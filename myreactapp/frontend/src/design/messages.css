@@ -1,0 +1,55 @@
+.userName {
+    animation: colorChange 10s infinite ease-in;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff9a9e;
+    } 5% {
+        color: #fcb69f;
+    } 10% {
+        color: #ff9a9e;
+    } 20% {
+        color: #a1c4fd;
+    } 25% {
+        color: #cfd9df;
+    } 50% {
+        color: #ebedee;
+    } 60% {
+        color:  #c3cfe2;
+    } 70% {
+        color: #667eea;
+    } 80% {
+        color: #764ba2;
+    } 90% {
+        color: #66a6ff;
+    } 100% {
+        color: #ff9a9e;
+    }
+}
+
+.chat-window {
+    z-index: 100;
+    height: 100%;
+    overflow: hidden;
+}
+
+.styles_scrollable-div__prSCv {
+    max-height: calc(100% - 2px) !important;
+    height: calc(100% - 2px) !important;
+    overflow-y: auto;
+}
+
+.chat-message-left, .chat-message-right {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.chat-message-left {
+    margin-right: '10px';
+}
+
+.chat-message-right {
+    flex-direction: 'row-reverse';
+    margin-left: '10px';
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    left: -100%; /* position off the left side of the screen */
+    top: 0;
+    width: 80%; /* set the width of the navbar */
+    height: 100%;
+    background: white; /* set the background color of the navbar */
+    z-index: 1; /* make sure the navbar is on top of other elements */
+    transform: translateX(-100%); /* use transform to slide the navbar out to the left */
+    transition: transform 0.3s ease-out; /* create a transition for the transform property */
+  }
+  
+  /* Show the navbar */
+  .navbar.show {
+    transform: translateX(0%); /* use transform to slide the navbar in from the left */
+  }
+
+@keyframes slide {
+    0% {
+
+    }
+}
